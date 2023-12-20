@@ -186,7 +186,7 @@ console.log("Idade permitida? " + idadePermitida);
  let tempo2 = "chuva";
  let hora = 8;
  let resultado4 = !((tempo2 !=="chuva") && (hora > 6));
- console.log(resultado4);
+ console.log("Esta chovendo. " + resultado4);
  
  // Operadores de ATRIBUICAO
  let preco1 = 10
@@ -209,3 +209,22 @@ console.log("Idade permitida? " + idadePermitida);
  contador2--;
  contador2--;
  console.log("Contagem de 5 - 1 - 1 eh igual a: " + contador2);
+
+ // Estruturas CONDICIONAIS
+ // IF, ELSE IF, ELSE
+
+ // IF, ELSE
+let possuiOvos = true;
+let itensComprados = "";
+
+if(possuiOvos);{
+  itensComprados = "Leite";
+}
+else{
+  console.log("Passou na sessao de congelados? ");
+  itensComprados = "Lasanha congelada";
+}
+
+console.log("Item comprado: " + itensComprados);
+
+// If, ELSE IF, ELSE
