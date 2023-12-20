@@ -145,15 +145,49 @@ console.log("As marcas sao diferentes. " + resultado1);
  console.log("5 >= 4: " + maiorIgual);
 // EX2
  let idadeMinima = 18;
- let idadePessoa = 18;
- let idadePermitida = idadeMinima >= idadePessoa;
+ let idadePessoa1 = 18;
+ let idadePermitida = idadeMinima >= idadePessoa1;
 console.log("Idade permitida? " + idadePermitida);
 
  let menorIgual = (4 <= 5);
  console.log("4 <= 5: " + menorIgual);
+ //EX2
+ let idadeMaxima = 50;
+ let idadePessoa2 = 50;
+ let resultadoIdadeValida = idadePessoa2 <= idadeMaxima;
+ console.log("Idade Permitida? " + resultadoIdadeValida);
 
  // Operadores LOGICOS
 
+ // AND ( && )
+ let idade = 18;
+ let vistoVerificado = false;
+ let resultado = (idade >= 18) && (vistoVerificado === true);
+ console.log("Requisitos preenchidos? " + resultado);
+
+ // AND  ( && ) - 100 moedas coletadas e 1 item estrela
+ let moedasColetadas = 99;
+ let item = "estreal";
+ let resultadoPlay1 = ( moedasColetadas >= 100) && (item === "estrela");
+ console.log("Requisitos preenchidos? " + resultadoPlay1);
+
+ // OR ( || ) - Personagem liberado se nao estiver chovendo ou se possuir guarda chuva
+ let tempo = "chuva";
+ let item1 = "guarda chuva";
+ let liberado = (tempo !== "chuva") || (item1 === "guarda chuva");
+ console.log("Personagem liberado? " + liberado);
+
+ // NOT ( ! ) - Afirmacao Negativa
+ let tempo1 = "chuva";
+ let resultado3 = tempo1  === "chuva";
+ console.log("Esta chovendo. " + !!resultado3);
+
+ // NOT ( ! ) - Afirmacao Negativa
+ let tempo2 = "chuva";
+ let hora = 8;
+ let resultado4 = !((tempo2 !=="chuva") && (hora > 6));
+ console.log(resultado4);
+ 
  // Operadores de ATRIBUICAO
  let preco1 = 10
  preco1 += 5 // preco = preco + 5 = 15
@@ -175,6 +209,3 @@ console.log("Idade permitida? " + idadePermitida);
  contador2--;
  contador2--;
  console.log("Contagem de 5 - 1 - 1 eh igual a: " + contador2);
-
-
-
