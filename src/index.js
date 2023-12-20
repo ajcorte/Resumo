@@ -1,4 +1,4 @@
-//Declarando variaveis
+//Declarando VARIAVEIS
 console.log("Digite o nome do jogador:");
 //declarar uma variavel
 let nickname = "ajcorte";
@@ -6,14 +6,14 @@ let nickname = "ajcorte";
 console.log("Bem vindo " + nickname +"!");
 console.log("Atencao, jogador " + nickname + " entrou no servidor!");
 
-//Declarando constantes
+//Declarando CONSTANTES
 const notificacao = "Pokemon Go diz: ";
 //Saida
 console.log(notificacao + "Tem um novo pokemon no game!");
 console.log(notificacao + "Voce foi derrotado por um lider Ouro!");
 
 //Exemplo pratico
-//Variaveis
+//VARIAVEIS
 let poteCafe = "Cafe";
 let poteAcucar = "Acucar";
 let poteBiscoito = "Biscoito";
@@ -36,7 +36,7 @@ console.log("O Pokemon " + nomePokemon +
 ", esta no nivel " + nivelPokemon +
 " e tem " + pontosDeVidaPokemon + " pontos de vida.");
 
-//Vetores e Matrizes
+//VETORES e MATRIZES
 let nomesPokemon = ["Pikachu" , "Chamander" , "Bubassaur"];
 let timePokemon = [
   ["Pikachu" , "M" , 1],
@@ -50,45 +50,131 @@ let timePokemon = [
 console.log(
 "O Pokemon " + timePokemon[1][0]  + 
 " eh do sexo " + timePokemon[1][1] +
- " e esta no nivel " + timePokemon[1][2]);
+ " e esta no nivel " + timePokemon[1][2] + ".");
 
- //Operadores Aritmeticos
+ //Operadores ARITMETICOS
+
+ //ADICAO
  let adicao = 5 + 3;
- console.log(adicao);
+ console.log("Adicao= " + adicao);
 
+ //Sinal de + usado para concatenar string
+ let idade1 = 30;
+ console.log("Valor da minha variavel= " + idade1);
+
+ // '+' realizando somas
+ let idade2 = 30 + 6;
+ console.log("Operacao de adicao= " + idade2);
+
+ //SUBTRACAO
  let subtracao = 8 - 2;
- console.log(subtracao);
+ console.log("Subtracao= " + subtracao);
 
+ // '-' Realizando subtracoes
+ let primeiroNumero = 1023;
+ let segundoNumero= 23;
+ console.log("Resultado= " + (primeiroNumero - segundoNumero));
+
+// MULTIPLICACAO
  let multiplicacao = 4 * 6;
- console.log(multiplicacao);
+ console.log("Multiplicao= " + multiplicacao);
 
+ // '*' Realizando Multiplicacoes
+ let multiplicador = 4;
+ let multiplicando = 12;
+ let produto = multiplicador * multiplicando;
+ console.log("Resultado da multiplicacao= " + produto);
+
+ // DIVISAO
  let divisao = 10 / 2;
- console.log(divisao);
+ console.log("Divisao= " + divisao);
 
+ // '/' Realizando Divisoes
+ let notaDoMercado = 50;
+ let pessoasParaDividir = 2;
+ console.log("Operacao de divisao= " + notaDoMercado / pessoasParaDividir);
+
+ // MODULO
  let modulo = 10 % 3;
- console.log(modulo);
+ console.log("Modulo= " + modulo);
 
- //Operadores Relacionais
- let igual = (5 == 5);
- console.log(igual);
+ // '%' Pegando o resto de uma divisao
+ let calculo = 10 % 3;
+ console.log("Operacao de modulo= " + calculo);
+
+ //Operadores RELACIONAIS
+// '=' eh atribuicao
+// '==' compara valor
+// '===' compara valor e formato do conteudo
+
+// '!==' eh diferente?
+let marca1 = "Apple";
+let marca2 = "Sansung";
+let resultado1 = marca1 !== marca2;
+console.log("As marcas sao diferentes. " + resultado1);
+
+ let igual = (5 == 5); // '==' Comparar valor
+ console.log("5 = 5: " + igual);
+
+ // Guardar valor em uma variavel de resultado (TRUE / FALSE)
+ let marca3 = "Apple";
+ let resultado2 = marca3 === "Sansung";
+ console.log("Resultado: " + resultado2);
+
+ // Guardar valor em uma variavel de resultado (TRUE / FALSE)
+ let cpfBloqueado = "123.456.789-00";
+ let cpfUsuario1 = "123.456.789-XX";
+ let ehCPFBloqueado1 = cpfUsuario1 === cpfBloqueado;
+ console.log("O CPF do usuario eh valido? " + ehCPFBloqueado1);
+
+ let cpfPermitido = "123.456.789-00";
+ let cpfUsuario2 = "123.456.789-00";
+ let ehCPFBloqueado2 = cpfUsuario2 === cpfPermitido;
+ console.log("O CPF do usuario eh valido? " + ehCPFBloqueado2);
 
  let diferente = (5 != 6);
- console.log(diferente);
+ console.log("5 =/ 6: " + diferente);
 
  let maiorQue = (5 > 4);
- console.log(maiorQue);
+ console.log("5 > 4: " + maiorQue);
 
  let menorQue = (4 < 5);
- console.log(menorQue);
+ console.log("4 < 5: " + menorQue);
 
  let maiorIgual = (5 >= 4);
- console.log(maiorIgual);
+ console.log("5 >= 4: " + maiorIgual);
+// EX2
+ let idadeMinima = 18;
+ let idadePessoa = 18;
+ let idadePermitida = idadeMinima >= idadePessoa;
+console.log("Idade permitida? " + idadePermitida);
 
  let menorIgual = (4 <= 5);
- console.log(menorIgual);
+ console.log("4 <= 5: " + menorIgual);
 
- //Operadores Logicos
- //Operadores de Atribuicao
- //Operadores de Incremento e Decremento
+ // Operadores LOGICOS
 
- 
+ // Operadores de ATRIBUICAO
+ let preco1 = 10
+ preco1 += 5 // preco = preco + 5 = 15
+ console.log("Resultado= " + preco1);
+
+ let preco2 = 10
+ preco2 -= 5 // preco = preco - 5 = 5
+ console.log("Resultado= " + preco2);
+
+ // Operadores de INCREMENTO e DECREMENTO
+ // '++' Incremento
+ let contador1 = 1;
+ contador1++;
+ contador1++;
+ console.log("Contagem de 1 + 1 + 1 eh igual a: " + contador1);
+
+ // '--' Decremento
+ let contador2 = 5;
+ contador2--;
+ contador2--;
+ console.log("Contagem de 5 - 1 - 1 eh igual a: " + contador2);
+
+
+
