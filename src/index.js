@@ -213,18 +213,112 @@ console.log("Idade permitida? " + idadePermitida);
  // Estruturas CONDICIONAIS
  // IF, ELSE IF, ELSE
 
+ //IF
+ let ehLigado = true;
+ if(ehLigado){
+  console.log("Executou comando!")
+ };
+
+ let possuiOvos = true;
+ let itensComprados = "";
+ if(possuiOvos){
+  itensComprados = "Leite"
+ };
+ console.log("Item comprado: " + itensComprados);
+
  // IF, ELSE
-let possuiOvos = true;
-let itensComprados = "";
-
-if(possuiOvos);{
-  itensComprados = "Leite";
-}
-else{
-  console.log("Passou na sessao de congelados? ");
-  itensComprados = "Lasanha congelada";
-}
-
-console.log("Item comprado: " + itensComprados);
+ let possuiOvos1 = false;
+ let itensComprados1 = "";
+ if(possuiOvos1){
+  itensComprados1 = "Leite"
+ }
+ else{
+  console.log("Passou na sessao de congelados");
+  itensComprados1 = "Lasanha congelada";
+ }
+ console.log("Item comprado: " + itensComprados1);
 
 // If, ELSE IF, ELSE
+let nivelDeFome = 3;
+if(nivelDeFome ===1){
+  console.log("Pouca fome.")
+
+}else if(nivelDeFome ===2){
+  console.log("Muita fome.")
+
+}else{
+  console.log("Voce esta faminto.")
+}
+
+//Estrutura SWITCH CASE
+let dia = "Sexta";
+switch (dia){
+  case "Segunda":
+    console.log("Dia de comecar a semana com energia!");
+    break;
+  case "Terca":
+    console.log("Dia de aprender coisas novas!");
+    break;
+  case "Quarta":
+    console.log("Metade da semana, continue firme!");
+    break;
+  case "Quinta":
+    console.log("Quase la, um pouco mais de esforco!");
+    break;
+  case "Sexta":
+    console.log("Dia de comemorar, o fim de semana esta chegando!");
+    break;
+  default:
+    console.log("Final de semana! Descanse e divirta-se!");
+}
+// SWITCH: É a palavra que diz ao computador que estamos começando a escolher com base em um valor.
+// CASE: São as opções que você dá ao computador para escolher.
+// BREAK: Diz ao computador para parar de verificar as opções apos encontrar a correta.
+// DEFAULT: É a opção que o computador escolhe se nenhuma das opções anteriores confere com o valor que você deu.
+
+// FOR, WHILE e DO-WHILE
+
+//FOR
+const numeros = [1, 2, 3, 4, 5];
+for(let i = 0; i < numeros.length; i++) {
+  console.log(numeros[i]);
+}
+
+for (let contador = 0; contador < 4; contador++){
+  console.log(contador);
+  console.log("Aumentando o contador:");
+}
+
+let pontosDeVida = 0
+for(let i= 1; i <= 10; i++){
+  pontosDeVida += 1 // pontosDeVida = pontosDeVida + 1;
+  console.log("Tomou pocao magica +" + i);
+}
+console.log("+" + pontosDeVida + " Totais");
+
+// WHILE
+let contador = 0;
+while(contador < 3){
+  console.log("Ola!")
+  contador++
+}
+
+let i = 0;
+while(i < 3){
+  console.log("Ola!")
+  i++
+}
+
+
+// DO WHILE
+let contadorX = 0;
+do {
+  console.log("Ola!")
+  contadorX++
+} while (contadorX < 3);
+
+let bolinhosComidos = 0;
+do {
+  bolinhosComidos++;
+  console.log("Vocecomeu ", bolinhosComidos, "bolinhos");
+} while (bolinhosComidos < 5);
